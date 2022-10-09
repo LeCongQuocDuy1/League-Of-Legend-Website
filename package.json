@@ -1,0 +1,31 @@
+{
+  "name": "lolesportweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelianthusAnnuus1003/League-Of-Legend-Website.git"
+  },
+  "keywords": [
+    "lolwebsite",
+    "quocduy",
+    "nodejs"
+  ],
+  "author": "duyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HelianthusAnnuus1003/League-Of-Legend-Website/issues"
+  },
+  "homepage": "https://github.com/HelianthusAnnuus1003/League-Of-Legend-Website#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
