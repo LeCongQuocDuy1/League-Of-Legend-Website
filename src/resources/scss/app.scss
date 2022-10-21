@@ -158,12 +158,62 @@ ul, li, a {
     transition: all 0.3s linear;
 }
 
+#start {
+    height: 4rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.start-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    line-height: 4rem;
+
+}
+
+.start-lists {
+    display: flex;
+    align-items: center;
+}
+
+.start-lists li {
+    position: relative;
+
+}
+
+.start-lists li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.start-lists li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: -1rem;
+    width: 0.2rem;
+    height: 2rem;
+    background-color: #333;
+    border-radius: 1.1rem;
+}
+
+.start-lists li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
 #header {
     height: var(--header-height);
     line-height: var(--header-height);
     background-color: #000;
     position: fixed;
-    top: 0;
+    top: 4rem;
     left: 0;
     right: 0;
     box-shadow: rgba(0, 0, 0, 0.6);
@@ -172,6 +222,7 @@ ul, li, a {
 
 .header-content {
     display: flex;
+    align-items: center;
     height: var(--header-height);
 }
 
@@ -205,7 +256,7 @@ ul, li, a {
     color: var(--second-color2);
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 4rem;
+    margin: 0 2rem;
     display: block;
     position: relative;
 }
@@ -260,9 +311,43 @@ ul, li, a {
     color: var(--second-color1);
 }
 
+.header-search {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    width: 25rem;
+    border-radius: 3.6rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-search button {
+    margin-right: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.header-search i {
+    font-size: 2rem;
+    color: #000;
+}
+
+.header-search input {
+    flex: 1;
+    width: 0rem;
+    border: none;
+    outline: none;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    color: #333;
+    background-color: transparent;
+}
+
 #slider {
     position: relative;
-    margin-top: var(--header-height);
+    margin-top: 12rem;
     height: 52rem;
     background: url(../images/banner1.jpg) center / cover no-repeat;
 }

@@ -25,6 +25,10 @@ app.get('/post', (req, res) => {
     res.render('post');
 })
 
+app.get('/search', (req, res) => {
+    res.render('search');
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port http://localhost:${port}`)
 })
